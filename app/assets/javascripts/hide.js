@@ -4,4 +4,4 @@ function hideWhenClicked() {
   link.style.display = "none"
 }
 
-link.addEventListener("click", hiddenWhenClicked());
+link.addEventListener("click", hiddenWhenClicked);
