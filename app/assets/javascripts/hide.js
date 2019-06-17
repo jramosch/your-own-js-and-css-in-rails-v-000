@@ -1,4 +1,4 @@
-begin=
+/*
 var link = document.getElementById('hide_this');
 
 function hideWhenClicked() {
@@ -6,4 +6,11 @@ function hideWhenClicked() {
 }
 
 link.addEventListener("click", hiddenWhenClicked);
-=end
+*/
+
+function hideWhenClicked(event) {
+  var $target = $(event.target);
+  $target.hide();
+}
+
+$('#hide_this').click(hideWhenClicked);
